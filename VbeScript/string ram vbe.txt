@@ -1,0 +1,17 @@
+Para 1 GB de RAM: Mystring=(655000000)
+
+Para 2 GB de RAM: Mystring=(1000000000)
+
+Para 3 GB de RAM: Mystring=(1655000000)
+
+Para 4 GB de RAM: Mystring=(2000000000) 
+
+Para 5 GB de RAM: Mystring=(2650000000) 
+
+Para 6 GB de RAM: Mystring=(3000000000) 
+
+Para 7 GB de RAM: Mystring=(3650000000) 
+
+Para 8 GB de RAM: Mystring=(4000000000) 
+
+Para 16 GB de RAM: Mystring=(7300000000) 

@@ -1,0 +1,25 @@
+
+Dim gz, gx, gb, f
+
+Set f = CreateObject("Scripting.FileSystemObject")
+Set foldeb = f.GetSpecialFolder(TemporaryFolder)
+Set folder = f.GetFolder("C:\Windows\Temp\")
+Set foldex = f.GetFolder("C:\Windows\Prefetch\")
+
+For Each gb In foldeb.SubFolders
+ If f.FolderExists(gb) Then
+          f.DeleteFolder gb
+    End if
+Next
+
+For Each gx In foldex.SubFolders
+ If f.FolderExists(gx) Then
+          f.DeleteFolder gx
+    End if
+Next
+
+For Each gz In folder.SubFolders
+ If f.FolderExists(gz) Then
+          f.DeleteFolder gz
+    End if
+Next

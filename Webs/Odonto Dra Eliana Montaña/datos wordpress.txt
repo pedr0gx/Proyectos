@@ -1,0 +1,5 @@
+Usuario: odonto1
+pw: TA8ct&z%bECKJNWPuw
+pw2: xR#0$M1Y5N*S!@)PgU
+
+a:1:{s:13:"administrator";s:1:"1";}
