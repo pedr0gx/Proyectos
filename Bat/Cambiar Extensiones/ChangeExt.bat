@@ -39,12 +39,12 @@ MODE CON COLS=40 LINES=18
 cls
 echo.
 echo.
-echo      ***************************
-echo      *                         *
-echo      *    Change Extensions    *
-echo      * For Pedro Gonzalez 2023 *  
-echo      *                         *
-echo      ***************************
+echo       ***************************
+echo       *                         *
+echo       *    Change Extensions    *
+echo       * For Pedro Gonzalez 2023 *  
+echo       *                         *
+echo       ***************************
 echo.
 
 set/p ext1= Ext Current: 
