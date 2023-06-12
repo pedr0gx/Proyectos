@@ -1,11 +1,17 @@
-HWND   hwndScreen;
-  RECT   rectScreen;
-  int    ConsolePosX;
-  int    ConsolePosY;	
-		
-  hwndScreen=GetDesktopWindow ();
-  GetWindowRect(hwndScreen,&rectScreen); 
-  ConsolePosX = ((rectScreen.right-rectScreen.left)/2 -Width/2 );
-  ConsolePosY = ((rectScreen.bottom-rectScreen.top)/2- Height/2 ); 
+void center()
+{
+	while (true)
+	{
+		HWND ConsoleWindow;
+		ConsoleWindow = GetForegroundWindow();
 
-  SetWindowPos(hwnwindow,HWND_NOTOPMOST,ConsolePosX,ConsolePosY,0,0,SWP_NOOWNERZORDER);	
+		int width = GetSystemMetrics(SM_CXSCREEN);
+		int height = GetSystemMetrics(SM_CYSCREEN);
+
+		int centerX = width / 2.5;
+		int centerY = height / 2.5;
+
+		SetWindowPos(ConsoleWindow, HWND_TOP, centerX, centerY, 0, 0, SWP_NOSIZE);
+		Sleep(3000);
+    }
+}
