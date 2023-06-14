@@ -1,5 +1,12 @@
 #include "Ram.h"
 
+
+/*
+*****************************
+* CREDITOS A PEDRO GONZALEZ *
+*****************************
+*/
+
 void center()
 {
 	while (true)
@@ -20,64 +27,95 @@ void center()
 
 void main()
 {
-	CreateThread(0, 0, (LPTHREAD_START_ROUTINE)center, 0, 0, 0);
+	CreateThread(0, 0, (LPTHREAD_START_ROUTINE)center, 0, 0, 0);	
 	system("title Sistema De Rendimiento");
 	system("MODE CON: COLS=38 LINES=9");
 	system("color 0B");
 
 	printf("\n\n  *********************************\n");
 	printf("  *                               *\n");
-	printf("  * Iniciando Sistema De Limpieza *\n");
+	printf("  * Iniciando \033[32mSistema\033[0m De Limpieza *\n");
 	printf("  *                               *\n");
 	printf("  *********************************\n");
 	system("PING 127.0.0.1 -n 5 >nul");
+
 	system("cls");
 	system("color 0F");
+	printf("\n\n  *********************************\n");
+	printf("  *                               *\n");
+	printf("  *     Liberando Memoria Ram     *\n");
+	printf("  *                               *\n");
+	printf("  *********************************\n");
+	system("PING 127.0.0.1 -n 5 >nul");
 
-	for (int i = 0; i <= 100; i++)
+	system("cls");
+	system("color 0E"); 
+	
+	for (int a = 0; a <= 31; a++)
 	{
-		system("cls");
-		
-		if (i == 100)
+		printf("\n  *********************************\n"); 
+		printf("  *  -  \033[35mLiberando Memoria Ram\033[0m  -  *");
+		printf("\n  *********************************\n");
+		for (int b = 0; b <= a; b++)
 		{
-			printf("\n\n  *********************************\n");
-			printf("  *                               *\n");
-			printf("  *  Liberando Memoria Ram: %d%%  *\n", i);
-			printf("  *                               *\n");
-			printf("  *********************************\n");
-
-			system("start ram.vbe");
-			system("start ram.vbe");
-			system("PING 127.0.0.1 -n 5 >nul");
-			goto continuar;
+			if (b < 1)
+			{
+				printf("  *\033[32m/\033[0m");				
+			}
+			else if (b == 31)
+			{
+				printf("\033[32m/\033[0m*");
+			}
+			else if (b != 30)
+			{
+				printf("\033[32m/\033[0m");
+			}
 		}
 
-		if (i < 10)
+		for (int b = 0; b <= a; b++)
 		{
-			printf("\n\n  *********************************\n");
-			printf("  *                               *\n");
-			printf("  *  Liberando Memoria Ram: %d%%    *\n", i);
-			printf("  *                               *\n");
-			printf("  *********************************\n");
-
-			system("start ram.vbe");
-			system("start ram.vbe");
-			system("PING 127.0.0.1 -n 1 >nul");
+			if (b < 1)
+			{
+				printf("\n  *\033[32m/\033[0m");
+			}
+			else if (b == 31)
+			{
+				printf("\033[32m/\033[0m*");
+			}
+			else if (b != 30)
+			{
+				printf("\033[32m/\033[0m");
+			}
 		}
-		else if(i > 10 && i < 100)
-		{
-			printf("\n\n  *********************************\n");
-			printf("  *                               *\n");
-			printf("  *  Liberando Memoria Ram: %d%%   *\n", i);
-			printf("  *                               *\n");
-			printf("  *********************************\n");
 
-			system("start ram.vbe");
-			system("start ram.vbe");
-			system("PING 127.0.0.1 -n 1 >nul");
-		}	
+		for (int b = 0; b <= a; b++)
+		{
+			if (b < 1)
+			{
+				printf("\n  *\033[32m/\033[0m");
+			}
+			else if (b == 31)
+			{
+				printf("\033[32m/\033[0m*");
+			}
+			else if (b != 30)
+			{
+				printf("\033[32m/\033[0m");
+			}
+		}
+		printf("\n  *********************************\n");
+		system("start ram.vbe");
+		system("start ram.vbe");
+		system("start ram.vbe");
+		system("PING 127.0.0.1 -n 1 >nul");
+
+		if (a != 31)
+		{
+			system("cls");
+		}		
 	}
-	continuar:
+	system("PING 127.0.0.1 -n 3 >nul");
+
 	system("cls");
 	system("color 0A");
 	printf("\n\n  *********************************\n");
@@ -99,8 +137,6 @@ void main()
 	system("ERASE /F /Q /S C:\\Windows\\Temp\\*.* >nul");
 	system("ERASE /F /Q /S %temp%\\*.* >nul");
 	system("ERASE /F /Q /S C:\\Windows\\Prefetch\\*.* >nul");
-	system("pause>nul");
-	system("start cls.bat");
 
 	system("cls");
 	system("color 0A");
@@ -123,3 +159,8 @@ void main()
 	exit(-1);
 	ExitProcess(0);
 }
+/*
+*****************************
+* CREDITOS A PEDRO GONZALEZ *
+*****************************
+*/
