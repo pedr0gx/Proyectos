@@ -1,0 +1,11 @@
+
+*.vsidx
+*.db-shm
+*.ipch
+*.pdb
+*.log
+*.iobj
+*.obj
+C++/Rendimiento/.vs/Rendimiento/v17/.suo
+*.db-wal
+*.db

@@ -1,0 +1,20 @@
+Lista de colores de texto utilizando combinaciones con el atributo claro:
+
+30 -> Negro
+1;30 -> Gris oscuro
+31 -> Rojo
+1;31 -> Rojo claro
+32 -> Verde
+1;32 -> Verde claro
+33 -> Marrón
+1;33 -> Marrón claro
+34 -> Azul
+1;34 -> Azul claro
+35 -> Púrpura
+1;35 -> Púrpura claro
+36 -> Cyan
+1;36 -> Cyan claro
+37 -> Gris claro
+1;37 -> Blanco
+
+\033[1;34mCreditos A Pedro Gonzalez\033[0m
