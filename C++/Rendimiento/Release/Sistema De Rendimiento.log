@@ -1,9 +1,0 @@
-﻿  Ram.cpp
-C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(1374,5): warning MSB8012: TargetPath(D:\Users\PedroGonzalez\Documents\Proyectos\C++\Rendimiento\Compilado\Rendimiento.exe) no coincide con el valor de la propiedad OutputFile de Linker (D:\Users\PedroGonzalez\Documents\Proyectos\C++\Rendimiento\Compilado\Limpiar.exe). Esto puede hacer que el proyecto no se compile correctamente. Para solucionar este problema, asegúrese de que los valores de propiedad $(OutDir), $(TargetName) y $(TargetExt) coinciden con el valor especificado en %(Link.OutputFile).
-C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(1376,5): warning MSB8012: TargetName(Rendimiento) no coincide con el valor de la propiedad OutputFile de Linker (Limpiar). Esto puede hacer que el proyecto no se compile correctamente. Para solucionar este problema, asegúrese de que los valores de propiedad $(OutDir), $(TargetName) y $(TargetExt) coinciden con el valor especificado en %(Link.OutputFile).
-  Generando código
-  1 of 106 functions ( 0.9%) were compiled, the rest were copied from previous compilation.
-    0 functions were new in current compilation
-    0 functions had inline decision re-evaluated but remain unchanged
-  Generación de código finalizada
-  Sistema De Rendimiento.vcxproj -> D:\Users\PedroGonzalez\Documents\Proyectos\C++\Rendimiento\Compilado\Rendimiento.exe
