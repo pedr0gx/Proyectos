@@ -9,3 +9,5 @@
 C++/Rendimiento/.vs/Rendimiento/v17/.suo
 *.db-wal
 *.db
+*.ipch
+*.pdb
