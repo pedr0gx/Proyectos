@@ -40,6 +40,12 @@ void main()
 	system("MODE CON: COLS=38 LINES=9");
 	system("color 0E");
 
+	STARTUPINFO si;
+	PROCESS_INFORMATION pi;
+	ZeroMemory(&si, sizeof(si));
+	si.cb = sizeof(si);
+	ZeroMemory(&pi, sizeof(pi));
+
 	printf("\n\n  *********************************\n");
 	printf("  *                               *\n");
 	printf("  * \033[36mIniciando Sistema De Limpieza\033[0m *\n");
@@ -167,8 +173,6 @@ void main()
 		printf("  *                               *\n");
 		printf("  *********************************\n");
 		Sleep(5000);
-		exit(-1);
-		ExitProcess(0);
 	}
 	else if (dir2 == NULL) {
 		system("cls");
@@ -179,8 +183,6 @@ void main()
 		printf("  *                               *\n");
 		printf("  *********************************\n");
 		Sleep(5000);
-		exit(-1);
-		ExitProcess(0);
 	}
 	else if (dir3 == NULL) {
 		system("cls");
@@ -191,8 +193,6 @@ void main()
 		printf("  *                               *\n");
 		printf("  *********************************\n");
 		Sleep(5000);
-		exit(-1);
-		ExitProcess(0);
 	}
 	struct dirent* entry;
 
@@ -220,13 +220,36 @@ void main()
 		}
 	}
 
-	system("start cls.bat");
+	CreateProcess(L"cls.exe", 0, 0, 0, 0, 0, 0, 0, &si, &pi);
+	WaitForSingleObject(pi.hProcess, INFINITE);
+	CloseHandle(pi.hProcess);
+	CloseHandle(pi.hThread);
 
 	system("cls");
 	system("color 0E");
 	printf("\n\n  *********************************\n");
 	printf("  *                               *\n");
 	printf("  * \033[32mArchivos Temporales Limpiados\033[0m *\n");
+	printf("  *                               *\n");
+	printf("  *********************************\n");
+	Sleep(5000);
+
+	system("cls");
+	system("color 0E");
+	printf("\n\n  *********************************\n");
+	printf("  *                               *\n");
+	printf("  *  \033[36mLimpiando AutoStart Windows\033[0m  *\n");
+	printf("  *                               *\n");
+	printf("  *********************************\n");
+	Sleep(5000);
+
+	system("REG DELETE HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Run /F >nul");
+
+	system("cls");
+	system("color 0E");
+	printf("\n\n  *********************************\n");
+	printf("  *                               *\n");
+	printf("  *\033[32m   AutoStart Windows Limpiado\033[0m  *\n");
 	printf("  *                               *\n");
 	printf("  *********************************\n");
 	Sleep(5000);
